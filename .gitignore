@@ -43,3 +43,13 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+*.pack
+*.pack
+.angular/cache/13.3.9/babel-webpack/fc91f0d5d89aaaf90065d5ab5bc123df.json
+.angular/cache/13.3.9/babel-webpack/a12358e9f6cfe81965e1386cb1b9ef03.json
+.angular/cache/13.3.9/babel-webpack/514108cdea8f2fc94e78fab5c2d7a055.json
+.angular/cache/13.3.9/babel-webpack/31f42c2bf326a214b5ca8207f7732dea.json
+.angular/cache/13.3.9/babel-webpack/23f7dcf84da1b5c4c42eb702eafbbb1c.json
+.angular/cache/13.3.9/babel-webpack/075db0a37f07824fdd961009f1ce39d7.json
+.angular/cache/13.3.9/babel-webpack/015ea8acd745117463f8bf17e4306cf4.json
+.angular/cache/13.3.9/angular-webpack/39b9018921eeb0ef35a354b1d9e9670df95d6edb/index.pack.old

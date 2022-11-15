@@ -1,2 +1,23 @@
-<app-nav-bar></app-nav-bar>
-<router-outlet></router-outlet>
+<app-nav-bar (toggleSidenav)="drawer.toggle()"></app-nav-bar>
+<mat-drawer-container
+  style="
+    height: 100%;
+    background-image: url('https://static01.nyt.com/images/2022/01/20/science/20xp-coralreef1/20xp-coralreef1-videoSixteenByNine3000.jpg');
+  "
+  class="example-container"
+  autosize
+>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <div class="container">
+      <div class="row">
+        <h1 style="cursor: pointer" routerLink="/calculate-oxygen">
+          Calculate Oxygen
+        </h1>
+      </div>
+    </div>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <router-outlet style="padding: 20px"></router-outlet>
+  </div>
+</mat-drawer-container>

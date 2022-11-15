@@ -1,14 +1,16 @@
-<mat-toolbar color="warn">
+<mat-toolbar color="primary">
   <button
+    (click)="toggleSidenav.emit()"
     mat-icon-button
     class="example-icon"
     aria-label="Example icon-button with menu icon"
   >
     <mat-icon>menu</mat-icon>
   </button>
-  <span>My App</span>
-  <span class="example-spacer"></span>
+  <span style="cursor: pointer" routerLink="/">Home</span>
+  <span style="flex: 1 1 auto"></span>
   <button
+    style="margin: 1rem"
     mat-raised-button
     class="example-icon favorite-icon"
     aria-label="Example icon-button with heart icon"
@@ -16,11 +18,12 @@
   >
     Login
   </button>
-  <button
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with share icon"
+
+  <span
+    style="cursor: pointer"
+    class="material-icons"
+    routerLinkActive="settingsIcon"
+    routerLink="/settings"
+    >settings</span
   >
-    <mat-icon>share</mat-icon>
-  </button>
 </mat-toolbar>

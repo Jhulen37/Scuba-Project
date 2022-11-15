@@ -1,1 +1,13 @@
-<p>home works!</p>
+<div class="container" style="background-color: white">
+  <mat-form-field appearance="outline">
+    <mat-label>Latitude</mat-label>
+    <input matInput [(ngModel)]="latitude" />
+  </mat-form-field>
+  <mat-form-field appearance="outline"
+    ><mat-label>Longitude</mat-label> <input matInput [(ngModel)]="longitude"
+  /></mat-form-field>
+  <button mat-raised-button (click)="getForecast()">Get Forecast</button>
+  <h1 *ngFor="let forecast of forecasts">
+    {{ forecast.name }} : {{ forecast.temperature }}
+  </h1>
+</div>

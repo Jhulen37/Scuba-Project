@@ -1,23 +1,33 @@
-<mat-card>
-  <mat-card-header> <mat-card-title>Register</mat-card-title></mat-card-header>
-  <mat-card-content>
-    <form [formGroup]="registerForm">
-      <mat-form-field>
-        <mat-label>Email</mat-label>
-        <input matInput type="email" formControlName="email" />
-      </mat-form-field>
-      <mat-form-field>
-        <mat-label>Password</mat-label>
-        <input matInput type="password" formControlName="password" />
-      </mat-form-field>
-    </form>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-raised-button color="primary" (click)="onSubmit()">
-      {{ isLoginMode ? "Login" : "Register" }}
-    </button>
-    <button mat-button (click)="isLoginMode = !isLoginMode">
-      Switch to {{ !isLoginMode ? "Login" : "Register" }}
-    </button>
-  </mat-card-actions>
-</mat-card>
+<div class="container" style="justify-content: center; width: 20rem">
+  <mat-card>
+    <mat-card-header>
+      <div class="row" style="justify-content: center">
+        <h1>{{ isLoginMode ? "Login" : "Register" }}</h1>
+      </div></mat-card-header
+    >
+    <mat-card-content>
+      <form [formGroup]="registerForm">
+        <div class="row">
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput type="email" formControlName="email" />
+          </mat-form-field>
+        </div>
+        <div class="row">
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput type="password" formControlName="password" />
+          </mat-form-field>
+        </div>
+      </form>
+    </mat-card-content>
+    <mat-card-actions class="d-flex justify-content-between">
+      <button mat-raised-button color="primary" (click)="onSubmit()">
+        {{ isLoginMode ? "Login" : "Register" }}
+      </button>
+      <button mat-raised-button (click)="isLoginMode = !isLoginMode">
+        Switch to {{ !isLoginMode ? "Login" : "Register" }}
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

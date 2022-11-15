@@ -7,6 +7,7 @@ interface AuthResponseData {
   refreshToken: string;
   expiresIn: string;
   localId: string;
+  registered?: boolean;
 }
 
 @Injectable({
@@ -18,6 +19,16 @@ export class AuthenticationService {
   signup(email: string, password: string) {
     return this.http.post<AuthResponseData>(
       `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${this.API_KEY}`,
+      {
+        email: email,
+        password: password,
+        returnSecureToken: true,
+      }
+    );
+  }
+  login(email: string, password: string) {
+    return this.http.post<AuthResponseData>(
+      `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${this.API_KEY}`,
       {
         email: email,
         password: password,

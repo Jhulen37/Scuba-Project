@@ -1,0 +1,10 @@
+mat-drawer-container {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 64px;
+}
+mat-drawer {
+  background: black;
+  color: rgb(2, 2, 153);
+}
