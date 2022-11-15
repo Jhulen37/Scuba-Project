@@ -45,6 +45,7 @@ testem.log
 Thumbs.db
 *.pack
 *.pack
+/.angular
 .angular/cache/13.3.9/babel-webpack/fc91f0d5d89aaaf90065d5ab5bc123df.json
 .angular/cache/13.3.9/babel-webpack/a12358e9f6cfe81965e1386cb1b9ef03.json
 .angular/cache/13.3.9/babel-webpack/514108cdea8f2fc94e78fab5c2d7a055.json
